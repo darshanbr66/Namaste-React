@@ -1,38 +1,20 @@
-/**
- * 
- * <div>
- *      <div>
- *              <h1> I am h1 tag </h1>
- *              <h2> I am h2 tag </h2>
- *              <h3> I am h3 tag </h3>
- *      </div>
- * </div>
- * 
- */
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-    'div', 
-    {id: "parent"}, 
+
+const Parent = React.createElement(
+    'div',
+    {id: 'parent'},
     [
-        React.createElement('div',{id: "child1"},
-            [
-                React.createElement("h1", {key: 1}, "I am h1 tag"),
-                React.createElement("h2", {key: 2}, "I am h2 tag"),
-                React.createElement("h3", {key: 3}, "I am h3 tag")
-            ]),
-        React.createElement('div',{id: "child2"},
-            [
-                React.createElement("h1", {key: 1}, "I am h1 tag"),
-                React.createElement("h2", {key: 2}, "I am h2 tag"),
-                React.createElement("h3", {key: 3}, "I am h3 tag")
-            ]),
+        React.createElement('h1', {id: 'p1'}, 'Hello  From React'),
+        React.createElement(
+            'div',
+            {id: 'child'},
+            React.createElement('h1', {id: 'c1'}, 'I am h1 tag'),
+            React.createElement('h2', {id: 'c2'}, 'I am h2 tag')
+         )
     ]
-)
-
-// const heading = React.createElement('h1', {id :"heading", abc: "xyz"}, "Hell React..");
-
-// console.log(heading); //Object
-
-const root = ReactDOM.createRoot(document.getElementById("heading"));
-
-root.render(parent);
+);
+        
+const root = ReactDOM.createRoot(document.getElementById("root")); 
+root.render(Parent);   

@@ -1,22 +1,21 @@
 {
-  "name": "react",
+  "name": "namaste-react",
   "version": "1.0.0",
-  "description": "This is Namaste React by Darshan",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
+  "description": "This is Namaste React from Darshan",
+  "homepage": "https://github.com/darshanbr66/Namaste-React#readme",
+  "bugs": {
+    "url": "https://github.com/darshanbr66/Namaste-React/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/darshanbr66/Namaste-React.git"
   },
-  "keywords": [],
-  "author": "darshan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/darshanbr66/Namaste-React/issues"
+  "author": "Darshan",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
   },
-  "homepage": "https://github.com/darshanbr66/Namaste-React#readme",
   "devDependencies": {
     "parcel": "^2.16.4"
   },
